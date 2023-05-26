@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-image: linear-gradient(to left, red, blue);
+        }
+        div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.453);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        fieldset{
+            background-color: rgba(0, 0, 0, 0.353);
+            padding: 10px;
+            margin: 15px;
+            color: white;
+            border-radius: 5px;
+            border: 2px solid;
+        }
+        legend{
+            font-size: 20px;
+        
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.582);
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+        label{
+            width: 100%;
+            padding: 15px;
+            font-weight: bold;
+            font-size: 16px;
+            
+        }
+        input{
+            margin: 15px;
+            outline: none;
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        .submit{
+            width: 100%;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .submit:hover{
+            background-color: darkblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Login</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome"><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"><br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha"><br>
+            <input class="submit" type="submit" id="submit">
+        </fieldset>
+    </div>
+</body>
+</html>
